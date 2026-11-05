@@ -94,8 +94,11 @@ const HighlightCode = ({
       <SyntaxHighlighter
         language={language}
         className={classNames(className, "microlight")}
+        tabIndex={0}
         renderPlainText={({ children, PlainTextViewer }) => (
-          <PlainTextViewer className={className}>{children}</PlainTextViewer>
+          <PlainTextViewer className={className} tabIndex={0}>
+            {children}
+          </PlainTextViewer>
         )}
       >
         {children}

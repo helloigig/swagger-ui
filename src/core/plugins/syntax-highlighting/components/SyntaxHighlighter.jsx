@@ -8,6 +8,7 @@ import ReactSyntaxHighlighter from "react-syntax-highlighter/dist/esm/light"
 const SyntaxHighlighter = ({
   language,
   className = "",
+  tabIndex,
   getConfigs,
   syntaxHighlighting = {},
   children = "",
@@ -20,6 +21,7 @@ const SyntaxHighlighter = ({
     <ReactSyntaxHighlighter
       language={language}
       className={className}
+      tabIndex={tabIndex}
       style={style}
     >
       {children}
@@ -30,6 +32,7 @@ const SyntaxHighlighter = ({
 SyntaxHighlighter.propTypes = {
   language: PropTypes.string.isRequired,
   className: PropTypes.string,
+  tabIndex: PropTypes.number,
   getConfigs: PropTypes.func.isRequired,
   syntaxHighlighting: PropTypes.shape({
     styles: PropTypes.object,

@@ -1,0 +1,145 @@
+openapi: 3.0.4
+info:
+  title: Scrollable code blocks
+  version: 1.0.0
+paths:
+  /items:
+    post:
+      operationId: createItem
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Item"
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Item"
+components:
+  schemas:
+    Item:
+      type: object
+      properties:
+        field01:
+          type: string
+          example: value 1
+        field02:
+          type: string
+          example: value 2
+        field03:
+          type: string
+          example: value 3
+        field04:
+          type: string
+          example: value 4
+        field05:
+          type: string
+          example: value 5
+        field06:
+          type: string
+          example: value 6
+        field07:
+          type: string
+          example: value 7
+        field08:
+          type: string
+          example: value 8
+        field09:
+          type: string
+          example: value 9
+        field10:
+          type: string
+          example: value 10
+        field11:
+          type: string
+          example: value 11
+        field12:
+          type: string
+          example: value 12
+        field13:
+          type: string
+          example: value 13
+        field14:
+          type: string
+          example: value 14
+        field15:
+          type: string
+          example: value 15
+        field16:
+          type: string
+          example: value 16
+        field17:
+          type: string
+          example: value 17
+        field18:
+          type: string
+          example: value 18
+        field19:
+          type: string
+          example: value 19
+        field20:
+          type: string
+          example: value 20
+        field21:
+          type: string
+          example: value 21
+        field22:
+          type: string
+          example: value 22
+        field23:
+          type: string
+          example: value 23
+        field24:
+          type: string
+          example: value 24
+        field25:
+          type: string
+          example: value 25
+        field26:
+          type: string
+          example: value 26
+        field27:
+          type: string
+          example: value 27
+        field28:
+          type: string
+          example: value 28
+        field29:
+          type: string
+          example: value 29
+        field30:
+          type: string
+          example: value 30
+        field31:
+          type: string
+          example: value 31
+        field32:
+          type: string
+          example: value 32
+        field33:
+          type: string
+          example: value 33
+        field34:
+          type: string
+          example: value 34
+        field35:
+          type: string
+          example: value 35
+        field36:
+          type: string
+          example: value 36
+        field37:
+          type: string
+          example: value 37
+        field38:
+          type: string
+          example: value 38
+        field39:
+          type: string
+          example: value 39
+        field40:
+          type: string
+          example: value 40

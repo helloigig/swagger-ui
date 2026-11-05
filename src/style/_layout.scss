@@ -695,6 +695,10 @@
     max-height: 400px;
     min-height: 6em;
 
+    &:focus-visible {
+      outline: 2px solid $form-textarea-focus-border-color;
+    }
+
     code {
       white-space: pre-wrap !important;
       word-break: break-all;
